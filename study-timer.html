@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer - Modern Student Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="dashboard">
+        <nav class="sidebar">
+            <div class="profile">
+                <img src="assets/Sohail Photo.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 id="username">Sohail Shaikh</h2>
+            </div>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="tasks.html"><i class="fas fa-tasks"></i> Tasks</a></li>
+                <li><a href="calendar.html"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+                <li><a href="notes.html"><i class="fas fa-sticky-note"></i> Notes</a></li>
+                <li><a href="#" class="active"><i class="fas fa-stopwatch"></i> Study Timer</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Music Player</a></li>
+                <li><a href="resources.html"><i class="fas fa-book"></i> Resources</a></li>
+            </ul>
+        </nav>
+        <div id="sidebarResizer"></div>
+        <main>
+            <header>
+                <h1>Study Timer</h1>
+            </header>
+            <div class="study-timer-content">
+                <div class="timer-display">
+                    <h2 id="timerDisplay">25:00</h2>
+                </div>
+                <div class="timer-controls">
+                    <button id="startTimer">Start</button>
+                    <button id="pauseTimer">Pause</button>
+                    <button id="resetTimer">Reset</button>
+                </div>
+                <div class="timer-settings">
+                    <h3>Timer Settings</h3>
+                    <label for="studyDuration">Study Duration (minutes):</label>
+                    <input type="number" id="studyDuration" value="25" min="1" max="120">
+                    <label for="breakDuration">Break Duration (minutes):</label>
+                    <input type="number" id="breakDuration" value="5" min="1" max="30">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="study-timer.js"></script>
+    <script src="sidebar-resizer.js"></script>
+    <script src="particles.min.js"></script>
+    <script src="particles-config.js"></script>
+</body>
+</html>
